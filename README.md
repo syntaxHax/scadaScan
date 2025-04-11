@@ -17,14 +17,23 @@ USAGE:
 - (Windows) Scan using a specific NIC by binding to its local IP address
 
 OPTIONS:
+
   --ip <ip_address>             Scan a single IP address
+  
   --file <targets.txt>          Scan multiple IPs from a file (one per line)
+  
   --ports <ports.txt>           Optional port list file (one port per line)
+  
   --sleep <seconds>             Delay in seconds between connections (default: 30)
+  
   --timeout <seconds>           Timeout for socket connections (default: 3)
+  
   --interface, -i <interface>   Specify interface to use:
                                   Linux  → interface name (e.g., eth0, wlan0)
                                   Windows → local IP bound to the desired NIC
+                                  
   --output <file.txt>           Specify custom output file (default: output.txt)
+  
   --verbose                     Enable verbose banner output and debugging
+  
   -h, --help                    Show this help message and exit
