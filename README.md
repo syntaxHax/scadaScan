@@ -3,21 +3,18 @@
 The Safe(-er?) SCADA/OT Port Enumeration Tool
 
 USAGE:
-  `python3 scadaScan.py --ip 192.168.10.15`
 
-    - Scan a single IP with default ports and 30s delay
+`python3 scadaScan.py --ip 192.168.10.15`
+- Scan a single IP with default ports and 30s delay
 
-  `python3 scadaScan.py --file /path/to/scope.txt --ports /path/to/ports.txt --sleep 45`
-    
-    - Scan a list of IPs, use custom ports, and delay 45 seconds between probes
+`python3 scadaScan.py --file /path/to/scope.txt --ports /path/to/ports.txt --sleep 45`
+- Scan a list of IPs, use custom ports, and delay 45 seconds between probes
 
-  `python3 scadaScan.py --ip 192.168.10.15 --interface eth0`
-    
-    - (Linux) Scan using a specific network interface (requires root)
+`python3 scadaScan.py --ip 192.168.10.15 --interface eth0`
+- (Linux) Scan using a specific network interface (requires root)
 
-  `python3 scadaScan.py --ip 192.168.10.15 --interface 192.168.1.101`
-    
-    - (Windows) Scan using a specific NIC by binding to its local IP address
+`python3 scadaScan.py --ip 192.168.10.15 --interface 192.168.1.101`
+- (Windows) Scan using a specific NIC by binding to its local IP address
 
 OPTIONS:
   --ip <ip_address>             Scan a single IP address
